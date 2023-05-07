@@ -12,7 +12,6 @@ body {
 
 body {
     background-color: hsl(212, 45%, 89%);
-;
 }
 
 p {
@@ -24,11 +23,11 @@ h1 {
     color: hsl(218, 44%, 22%);
 }
 
-section {
+.container {
     width: 300px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
-    margin: 80px auto;
+    margin: 40px auto;
     padding: 20px;
 }
 
@@ -57,6 +56,11 @@ section {
     margin: 10px;
 }
 
-@media screen and (min-width: 375px) {
-    
+@media screen and (min-width: 440px) {
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
